@@ -2,35 +2,42 @@ package Pages;
 
 import org.openqa.selenium.WebDriver;
 
+import CustomControls.Button;
+import CustomControls.WebElementActions;
 import Locators.ElementLocators;
 
 public class HomePage {
+	
 	WebDriver driver;
-	ElementLocators elementLocators;
+	
+	WebElementActions webElementActions;
+	Button button;
 
-	public HomePage(WebDriver driver1) {
+	public HomePage(WebDriver driver) {
 
-		driver = driver1;
-		elementLocators = new ElementLocators();
+		this.driver = driver;
+		
+		webElementActions = new WebElementActions (driver);
+		button = new Button(driver);
 	}
 	
 	public void ClickRemoveButton() {
-		driver.findElement(elementLocators.removeButon).click();
+		button.Click(ElementLocators.removeButon);
 	}
 	
 	public void ClickAddToCartButton() {
-		driver.findElement(elementLocators.addToCartButton).click();
+		button.Click(ElementLocators.addToCartButton);
 	}
 	
 	
 	public boolean IsRemoveButtonDisplayed() {
-		return driver.findElement(elementLocators.removeButon).isDisplayed();
+		return webElementActions.IsDisplayed(ElementLocators.removeButon);
 		
 	}
 	
 	
 	public String GetHomePageTitle() {
-		return driver.findElement(elementLocators.homePageTitleLoc).getText();
+		return webElementActions.GetText(ElementLocators.homePageTitleLoc);
 	}
 	
 }

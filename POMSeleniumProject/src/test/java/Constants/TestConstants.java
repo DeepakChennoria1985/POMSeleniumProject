@@ -2,6 +2,6 @@ package Constants;
 
 public class TestConstants {
 
-	public String indexPageTitle = "Swag Labs";
-	public String homePageSubTitle = "Products";
+	public static String indexPageTitle = "Swag Labs";
+	public static String homePageSubTitle = "Products";
 }

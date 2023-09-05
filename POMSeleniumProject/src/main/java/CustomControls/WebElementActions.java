@@ -20,6 +20,17 @@ public class WebElementActions {
 
 	}
 
+
+	  /**
+	   * <h1>Wait for Element</h1>
+	   * <p>
+	   * <b>Description: </b>
+	   * This function is used to dynamically wait for element visibility in DOM </p>
+	   * 
+	   * @param element This is the parameter to pass locator of target element
+	   * @return WebElement This returns webelement, if visible
+	   */
+	
 	private WebElement WaitForWebElement(By element) {
 		WebElement elementVisible = driver.findElement(element);
 		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver).withTimeout(5000, TimeUnit.MILLISECONDS)
@@ -28,12 +39,12 @@ public class WebElementActions {
 		return wait.until(ExpectedConditions.visibilityOf(elementVisible));
 	}
 
-	public void Click(By element) {
+	protected void ClickAction(By element) {
 
 		WaitForWebElement(element).click();
 	}
 
-	public void SendKeys(By element, String text) {
+	protected void SendKeysAction(By element, String text) {
 
 		WaitForWebElement(element).sendKeys(text);
 	}
@@ -42,5 +53,25 @@ public class WebElementActions {
 
 		return WaitForWebElement(element).getText();
 	}
+	
+	protected void ClearTextAction(By element) {
 
+	    WaitForWebElement(element).clear();
+	}
+	
+	public boolean IsDisplayed(By element) {
+
+		return WaitForWebElement(element).isDisplayed();
+	}
+
+	public boolean IsEnabled(By element) {
+
+		return WaitForWebElement(element).isEnabled();
+	}
+	
+	public boolean IsSelectedn(By element) {
+
+		return WaitForWebElement(element).isSelected();
+	}
+	
 }
