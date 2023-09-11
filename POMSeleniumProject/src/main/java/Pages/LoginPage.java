@@ -25,24 +25,24 @@ public class LoginPage {
 	}
 
 	private void EneterUserName(String userName) {
-		textField.SendKeys(ElementLocators.loginInput, userName);
+		textField.SendKeys(ElementLocators.LoginPage.loginInput, userName);
 
 	}
 
 	private void EneterPassword(String password) {
-		textField.SendKeys(ElementLocators.passwordInput, password);
-		//driver.findElement(elementLocators.passwordInput).sendKeys(password);
+		textField.SendKeys(ElementLocators.LoginPage.passwordInput, password);
+		//driver.findElement(ElementLocators.LoginPage.passwordInput).sendKeys(password);
 
 	}
 
 	private void ClickLoginButton() {
-		button.Click(ElementLocators.loginButton);
-	//	driver.findElement(elementLocators.loginButton).click();
+		button.Click(ElementLocators.LoginPage.loginButton);
+	//	driver.findElement(ElementLocators.LoginPage.loginButton).click();
 
 	}
 	
 	public String GetIndexPageTitle() {
-		return webElementActions.GetText(ElementLocators.indexPageTitle);
+		return webElementActions.GetText(ElementLocators.LoginPage.indexPageTitle);
 	}
 	
 	public void LoginToApplication(String userName, String password) {

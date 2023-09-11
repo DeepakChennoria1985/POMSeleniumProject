@@ -3,6 +3,7 @@ package Pages;
 import org.openqa.selenium.WebDriver;
 
 import CustomControls.Button;
+import CustomControls.DropDown;
 import CustomControls.WebElementActions;
 import Locators.ElementLocators;
 
@@ -12,6 +13,7 @@ public class HomePage {
 	
 	WebElementActions webElementActions;
 	Button button;
+	DropDown dropdown;
 
 	public HomePage(WebDriver driver) {
 
@@ -19,25 +21,37 @@ public class HomePage {
 		
 		webElementActions = new WebElementActions (driver);
 		button = new Button(driver);
+		dropdown = new DropDown(driver);
 	}
 	
 	public void ClickRemoveButton() {
-		button.Click(ElementLocators.removeButon);
+		button.Click(ElementLocators.HomePage.removeButon);
 	}
 	
 	public void ClickAddToCartButton() {
-		button.Click(ElementLocators.addToCartButton);
+		button.Click(ElementLocators.HomePage.addToCartButton);
 	}
 	
 	
 	public boolean IsRemoveButtonDisplayed() {
-		return webElementActions.IsDisplayed(ElementLocators.removeButon);
+		return webElementActions.IsDisplayed(ElementLocators.HomePage.removeButon);
 		
 	}
 	
 	
 	public String GetHomePageTitle() {
-		return webElementActions.GetText(ElementLocators.homePageTitleLoc);
+		return webElementActions.GetText(ElementLocators.HomePage.homePageTitleLoc);
 	}
 	
+	public void SortProductsOrderUsingText(String sortOrder) {
+		dropdown.SelectByVisibleText(ElementLocators.HomePage.productSortDropDown, sortOrder);
+	}
+	
+	public void SortProductsOrderUsingValue(String sortOrder) {
+		dropdown.SelectByValue(ElementLocators.HomePage.productSortDropDown, sortOrder);
+	}
+	
+	public void SortProductsOrderUsingIndex(int sortOrder) {
+		dropdown.SelectByIndex(ElementLocators.HomePage.productSortDropDown, sortOrder);
+	}
 }

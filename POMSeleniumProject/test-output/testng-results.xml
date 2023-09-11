@@ -2,40 +2,43 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-01T19:48:21 IST" name="Default suite" finished-at="2023-09-01T19:52:18 IST" duration-ms="236923">
+  <suite started-at="2023-09-11T19:23:30 IST" name="Default suite" finished-at="2023-09-11T19:28:39 IST" duration-ms="309586">
     <groups>
+      <group name="Smoke">
+        <method signature="ProductsTestCases.VerifyDecendingSortingOfProducts()[pri:0, instance:Tests.ProductsTests.ProductsTestCases@6f15d60e]" name="VerifyDecendingSortingOfProducts" class="Tests.ProductsTests.ProductsTestCases"/>
+      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2023-09-01T19:48:21 IST" name="Default test" finished-at="2023-09-01T19:52:18 IST" duration-ms="236923">
-      <class name="Tests.LoginTests.LoginTestCases">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:Tests.LoginTests.LoginTestCases@6f15d60e]" started-at="2023-09-01T19:48:21 IST" name="SetUp" finished-at="2023-09-01T19:50:32 IST" duration-ms="130376" status="PASS">
+    <test started-at="2023-09-11T19:23:30 IST" name="Default test" finished-at="2023-09-11T19:28:39 IST" duration-ms="309586">
+      <class name="Tests.ProductsTests.ProductsTestCases">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:Tests.ProductsTests.ProductsTestCases@6f15d60e]" started-at="2023-09-11T19:23:30 IST" name="SetUp" finished-at="2023-09-11T19:24:29 IST" duration-ms="59031" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="ValidLoginTest()[pri:0, instance:Tests.LoginTests.LoginTestCases@6f15d60e]" started-at="2023-09-01T19:50:32 IST" name="ValidLoginTest" finished-at="2023-09-01T19:52:17 IST" duration-ms="104990" status="PASS">
+        <test-method signature="VerifyDecendingSortingOfProducts()[pri:0, instance:Tests.ProductsTests.ProductsTestCases@6f15d60e]" started-at="2023-09-11T19:24:29 IST" name="VerifyDecendingSortingOfProducts" finished-at="2023-09-11T19:28:37 IST" duration-ms="248495" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidLoginTest -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:Tests.LoginTests.LoginTestCases@6f15d60e]" started-at="2023-09-01T19:52:17 IST" name="TearDown" finished-at="2023-09-01T19:52:18 IST" duration-ms="1377" status="FAIL">
+        </test-method> <!-- VerifyDecendingSortingOfProducts -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:Tests.ProductsTests.ProductsTestCases@6f15d60e]" started-at="2023-09-11T19:28:37 IST" name="TearDown" finished-at="2023-09-11T19:28:39 IST" duration-ms="1570" status="FAIL">
           <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
             <message>
               <![CDATA[Error communicating with the remote browser. It may have died.
 Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
-System info: host: 'dpk-PC', ip: '192.168.1.5', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '17.0.6'
+System info: host: 'dpk-PC', ip: '192.168.1.4', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '17.0.6'
 Driver info: driver.version: RemoteWebDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:49772}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}), userDataDir=C:\Program Files (x86)\scoped_dir980_1033372697}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=109.0.5414.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
-Session ID: 95ef06b622e8e59bd9b9333d5c8e5c70]]>
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:53876}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}), userDataDir=C:\Program Files (x86)\scoped_dir7932_899042951}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=109.0.5414.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: e487c6aec5fe0c99179e6aa80637e981]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
 Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
-System info: host: 'dpk-PC', ip: '192.168.1.5', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '17.0.6'
+System info: host: 'dpk-PC', ip: '192.168.1.4', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '17.0.6'
 Driver info: driver.version: RemoteWebDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:49772}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}), userDataDir=C:\Program Files (x86)\scoped_dir980_1033372697}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=109.0.5414.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
-Session ID: 95ef06b622e8e59bd9b9333d5c8e5c70
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:53876}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}), userDataDir=C:\Program Files (x86)\scoped_dir7932_899042951}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=109.0.5414.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: e487c6aec5fe0c99179e6aa80637e981
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
 at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:497)
-at Tests.TestBase.TestCasesBase.TearDown(TestCasesBase.java:28)
+at Tests.TestBase.TestCasesBase.TearDown(TestCasesBase.java:27)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -88,7 +91,7 @@ at org.openqa.selenium.os.ProcessUtils.getProcessId(ProcessUtils.java:181)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-      </class> <!-- Tests.LoginTests.LoginTestCases -->
+      </class> <!-- Tests.ProductsTests.ProductsTestCases -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
