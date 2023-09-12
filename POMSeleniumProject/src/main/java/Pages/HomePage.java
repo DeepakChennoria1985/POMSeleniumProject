@@ -32,6 +32,9 @@ public class HomePage {
 		button.Click(ElementLocators.HomePage.addToCartButton);
 	}
 	
+	public void ClickMenuButton() {
+		button.Click(ElementLocators.HomePage.menuButton);
+	}
 	
 	public boolean IsRemoveButtonDisplayed() {
 		return webElementActions.IsDisplayed(ElementLocators.HomePage.removeButon);

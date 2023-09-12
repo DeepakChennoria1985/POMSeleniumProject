@@ -10,6 +10,7 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.ElementNotInteractableException;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.interactions.Actions;
 
 public class WebElementActions {
 
@@ -76,6 +77,30 @@ public class WebElementActions {
 		option.selectByIndex(index);
 	}
 
+	protected void MouseHoverAndSelectSubOption(By menuLocator, By subOptionLocator) {
+
+		Actions actions = new Actions(driver);
+		actions.moveToElement(WaitForWebElement(menuLocator)).moveToElement(WaitForWebElement(subOptionLocator)).click()
+				.build().perform();
+
+	}
+
+	protected void ClickElementAndSelectSubOption(By menuLocator, By subOptionLocator) {
+
+		Actions actions = new Actions(driver);
+		actions.moveToElement(WaitForWebElement(menuLocator)).click().moveToElement(WaitForWebElement(subOptionLocator))
+				.click().build().perform();
+
+	}
+
+	protected void MoveToSubOptionAndClick(By menuLocator) {
+		Actions actions = new Actions(driver);
+		actions.moveToElement(WaitForWebElement(menuLocator))
+		.click()
+		.build()
+		.perform();
+	}
+	
 	public boolean IsDisplayed(By locator) {
 
 		return WaitForWebElement(locator).isDisplayed();
