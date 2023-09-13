@@ -42,8 +42,8 @@ public class HomePage {
 	}
 	
 	
-	public String GetHomePageTitle() {
-		return webElementActions.GetText(ElementLocators.HomePage.homePageTitleLoc);
+	public boolean IstHomePageTitleDisplayed(String title) {
+		return webElementActions.GetText(ElementLocators.HomePage.homePageTitleLoc).equals(title);
 	}
 	
 	public void SortProductsOrderUsingText(String sortOrder) {

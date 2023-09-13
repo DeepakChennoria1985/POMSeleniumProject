@@ -6,14 +6,22 @@ import org.json.simple.parser.JSONParser;
 import org.json.simple.JSONObject;
 
 public class ReadJasonUtility {
-	
-	
-	public static String GetValueForKey(String key) {
-		
+
+	private static String GetValueForKeyFromJson(String key, String fileName) {
+
 		JSONParser parser = new JSONParser();
+		Object obj = null;
 		String value = null;
 		try {
-			Object obj = parser.parse(new FileReader("F:\\JWS\\POMSeleniumProject\\POMSeleniumProject\\src\\test\\java\\Configs\\GlobalConfig.jason"));
+			
+			if(fileName.contains("GlobalConfig"))
+			{
+			 obj = parser.parse(new FileReader(PathUtility.GetConfigFilePath()));
+			}
+			else if(fileName.contains("TestData"))
+			{
+				 obj = parser.parse(new FileReader(PathUtility.GetTestDataFilePath()));
+			}
 			JSONObject jsonObject = (JSONObject) obj;
 			value = (String) jsonObject.get(key);
 		} catch (Exception e) {
@@ -23,4 +31,17 @@ public class ReadJasonUtility {
 		return value;
 
 	}
+
+	public static String GetValueFromConfig(String key) {
+
+		return GetValueForKeyFromJson(key, "GlobalConfig");
+
+	}
+
+	public static String GetValueFromTestData(String key) {
+
+		return GetValueForKeyFromJson(key, "TestData");
+
+	}
+
 }

@@ -22,7 +22,7 @@ public class LoginTestCases extends TestCasesBase {
 		HomePage homePage = new HomePage(driver);
 		
 		loginPage.LoginToApplication("standard_user", "secret_sauce");
-		Assert.assertEquals(homePage.GetHomePageTitle(), TestConstants.homePageSubTitle, "Home page not displayed.");
+		Assert.assertTrue(homePage.IstHomePageTitleDisplayed(TestConstants.homePageSubTitle), "Home page not displayed.");
 		
 		
 	}
@@ -35,7 +35,7 @@ public class LoginTestCases extends TestCasesBase {
 		HomePage homePage = new HomePage(driver);
 		
 		loginPage.LoginToApplication("standard_user123", "secret_sauce");
-		Assert.assertNotEquals(homePage.GetHomePageTitle(), TestConstants.homePageSubTitle, "Home page not displayed.");
+		Assert.assertTrue(!homePage.IstHomePageTitleDisplayed(TestConstants.homePageSubTitle), "Home page is displayed.");
 		
 		
 	}
@@ -48,7 +48,7 @@ public class LoginTestCases extends TestCasesBase {
 		HomePage homePage = new HomePage(driver);
 		
 		loginPage.LoginToApplication("standard_user", "secret_sauce123");
-		Assert.assertNotEquals(homePage.GetHomePageTitle(), TestConstants.homePageSubTitle, "Home page not displayed.");
+		Assert.assertTrue(!homePage.IstHomePageTitleDisplayed(TestConstants.homePageSubTitle), "Home page is displayed.");
 		
 		
 	}
@@ -61,7 +61,7 @@ public class LoginTestCases extends TestCasesBase {
 		HomePage homePage = new HomePage(driver);
 		
 		loginPage.LoginToApplication("standard_user123", "secret_sauce123");
-		Assert.assertNotEquals(homePage.GetHomePageTitle(), TestConstants.homePageSubTitle, "Home page not displayed.");
+		Assert.assertTrue(!homePage.IstHomePageTitleDisplayed(TestConstants.homePageSubTitle), "Home page is displayed.");
 		
 		
 	}

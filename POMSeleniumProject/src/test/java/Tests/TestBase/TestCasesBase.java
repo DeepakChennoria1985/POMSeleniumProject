@@ -14,11 +14,10 @@ public class TestCasesBase {
 
 	@BeforeTest
 	public void SetUp() {
-		String URL = ReadJasonUtility.GetValueForKey("AppURL");
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get(URL);
+		driver.get(ReadJasonUtility.GetValueFromConfig("AppURL"));
 	}
 
 	@AfterTest
