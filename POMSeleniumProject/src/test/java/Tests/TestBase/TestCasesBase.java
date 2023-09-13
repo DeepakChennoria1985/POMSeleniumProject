@@ -5,6 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
+import Utils.ReadJasonUtility;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestCasesBase {
@@ -13,10 +14,8 @@ public class TestCasesBase {
 
 	@BeforeTest
 	public void SetUp() {
-		String URL = "https://www.saucedemo.com/";
+		String URL = ReadJasonUtility.GetValueForKey("AppURL");
 		WebDriverManager.chromedriver().setup();
-		/*ChromeOptions options = new ChromeOptions();
-		options.addArguments("--remote-allow-origins=*");*/
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get(URL);
