@@ -8,6 +8,7 @@ import Pages.HomePage;
 import Pages.LoginPage;
 import Pages.Module.LeftPanel;
 import Tests.TestBase.TestCasesBase;
+import Utils.ReadJasonUtility;
 
 public class LogoutTestCases  extends TestCasesBase {
 	
@@ -18,8 +19,8 @@ public class LogoutTestCases  extends TestCasesBase {
 		HomePage homePage = new HomePage(driver);
 		LeftPanel leftPanel = new LeftPanel(driver);
 		
-		loginPage.LoginToApplication("standard_user", "secret_sauce");
-		Assert.assertEquals(homePage.GetHomePageTitle(), TestConstants.homePageSubTitle, "Home page not displayed.");
+		loginPage.LoginToApplication(ReadJasonUtility.GetValueFromTestData("UserName1"), ReadJasonUtility.GetValueFromTestData("Password"));
+		Assert.assertTrue(homePage.IstHomePageTitleDisplayed(), "Home page not displayed.");
 		homePage.ClickMenuButton();
 		leftPanel.SelectLogoutFromMenu();
 		

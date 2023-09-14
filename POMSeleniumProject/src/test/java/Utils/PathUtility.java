@@ -12,7 +12,7 @@ public class PathUtility {
 	
 	public static String GetTestDataFilePath() {
 		String projpath = System.getProperty("user.dir");
-		return Paths.get(projpath.toString(), "src", "test", "java", "TestData", "TestData.jason").toString();
+		return Paths.get(projpath.toString(), "src", "test", "java", "TestData", "TestCasesData.jason").toString();
 
 	}
 

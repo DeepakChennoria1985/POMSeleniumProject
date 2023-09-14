@@ -2,44 +2,44 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-13T19:29:02 IST" name="Default suite" finished-at="2023-09-13T19:34:15 IST" duration-ms="312462">
+  <suite started-at="2023-09-14T18:29:46 IST" name="Default suite" finished-at="2023-09-14T18:30:03 IST" duration-ms="16922">
     <groups>
       <group name="Regression">
-        <method signature="LoginTestCases.InValidLoginTestWithWrongPassword()[pri:0, instance:Tests.LoginTests.LoginTestCases@446a1e84]" name="InValidLoginTestWithWrongPassword" class="Tests.LoginTests.LoginTestCases"/>
+        <method signature="LoginTestCases.InValidLoginTestWithWrongUserName()[pri:0, instance:Tests.LoginTests.LoginTestCases@446a1e84]" name="InValidLoginTestWithWrongUserName" class="Tests.LoginTests.LoginTestCases"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2023-09-13T19:29:02 IST" name="Default test" finished-at="2023-09-13T19:34:15 IST" duration-ms="312462">
+    <test started-at="2023-09-14T18:29:46 IST" name="Default test" finished-at="2023-09-14T18:30:03 IST" duration-ms="16922">
       <class name="Tests.LoginTests.LoginTestCases">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:Tests.LoginTests.LoginTestCases@446a1e84]" started-at="2023-09-13T19:29:02 IST" name="SetUp" finished-at="2023-09-13T19:33:36 IST" duration-ms="273626" status="PASS">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:Tests.LoginTests.LoginTestCases@446a1e84]" started-at="2023-09-14T18:29:46 IST" name="SetUp" finished-at="2023-09-14T18:29:59 IST" duration-ms="12288" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="InValidLoginTestWithWrongPassword()[pri:0, instance:Tests.LoginTests.LoginTestCases@446a1e84]" started-at="2023-09-13T19:33:36 IST" name="InValidLoginTestWithWrongPassword" finished-at="2023-09-13T19:34:13 IST" duration-ms="37175" status="FAIL">
+        <test-method signature="InValidLoginTestWithWrongUserName()[pri:0, instance:Tests.LoginTests.LoginTestCases@446a1e84]" started-at="2023-09-14T18:29:59 IST" name="InValidLoginTestWithWrongUserName" finished-at="2023-09-14T18:30:01 IST" duration-ms="2815" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='header_container']//span[@class='title']"}
   (Session info: chrome=109.0.5414.120)
   (Driver info: chromedriver=109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 378 milliseconds
+Command duration or timeout: 39 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
 System info: host: 'dpk-PC', ip: '192.168.1.4', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '17.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:53899}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}), userDataDir=C:\Program Files (x86)\scoped_dir5992_1195181368}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=109.0.5414.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
-Session ID: ae2130296f85be0b5b3a105cd984afa9
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:49490}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}), userDataDir=C:\Program Files (x86)\scoped_dir6652_251294561}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=109.0.5414.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 46810bed9fe37dece0f63063b546fbec
 *** Element info: {Using=xpath, value=//div[@id='header_container']//span[@class='title']}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='header_container']//span[@class='title']"}
   (Session info: chrome=109.0.5414.120)
   (Driver info: chromedriver=109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 378 milliseconds
+Command duration or timeout: 39 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
 System info: host: 'dpk-PC', ip: '192.168.1.4', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '17.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:53899}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}), userDataDir=C:\Program Files (x86)\scoped_dir5992_1195181368}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=109.0.5414.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
-Session ID: ae2130296f85be0b5b3a105cd984afa9
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:49490}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}), userDataDir=C:\Program Files (x86)\scoped_dir6652_251294561}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=109.0.5414.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 46810bed9fe37dece0f63063b546fbec
 *** Element info: {Using=xpath, value=//div[@id='header_container']//span[@class='title']}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
@@ -55,8 +55,8 @@ at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
 at CustomControls.WebElementActions.WaitForWebElement(WebElementActions.java:37)
 at CustomControls.WebElementActions.GetText(WebElementActions.java:56)
-at Pages.HomePage.GetHomePageTitle(HomePage.java:46)
-at Tests.LoginTests.LoginTestCases.InValidLoginTestWithWrongPassword(LoginTestCases.java:51)
+at Pages.HomePage.IstHomePageTitleDisplayed(HomePage.java:46)
+at Tests.LoginTests.LoginTestCases.InValidLoginTestWithWrongUserName(LoginTestCases.java:38)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -90,24 +90,24 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- InValidLoginTestWithWrongPassword -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:Tests.LoginTests.LoginTestCases@446a1e84]" started-at="2023-09-13T19:34:13 IST" name="TearDown" finished-at="2023-09-13T19:34:15 IST" duration-ms="1167" status="FAIL">
+        </test-method> <!-- InValidLoginTestWithWrongUserName -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:Tests.LoginTests.LoginTestCases@446a1e84]" started-at="2023-09-14T18:30:02 IST" name="TearDown" finished-at="2023-09-14T18:30:03 IST" duration-ms="1556" status="FAIL">
           <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
             <message>
               <![CDATA[Error communicating with the remote browser. It may have died.
 Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
 System info: host: 'dpk-PC', ip: '192.168.1.4', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '17.0.6'
 Driver info: driver.version: RemoteWebDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:53899}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}), userDataDir=C:\Program Files (x86)\scoped_dir5992_1195181368}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=109.0.5414.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
-Session ID: ae2130296f85be0b5b3a105cd984afa9]]>
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:49490}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}), userDataDir=C:\Program Files (x86)\scoped_dir6652_251294561}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=109.0.5414.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 46810bed9fe37dece0f63063b546fbec]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
 Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
 System info: host: 'dpk-PC', ip: '192.168.1.4', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '17.0.6'
 Driver info: driver.version: RemoteWebDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:53899}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}), userDataDir=C:\Program Files (x86)\scoped_dir5992_1195181368}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=109.0.5414.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
-Session ID: ae2130296f85be0b5b3a105cd984afa9
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:49490}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}), userDataDir=C:\Program Files (x86)\scoped_dir6652_251294561}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=109.0.5414.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 46810bed9fe37dece0f63063b546fbec
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
 at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:497)

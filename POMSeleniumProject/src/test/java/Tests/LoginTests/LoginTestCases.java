@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 import Constants.TestConstants;
 import Pages.HomePage;
 import Tests.TestBase.TestCasesBase;
+import Utils.ReadJasonUtility;
 
 
 
@@ -21,8 +22,8 @@ public class LoginTestCases extends TestCasesBase {
 		LoginPage loginPage = new LoginPage(driver);
 		HomePage homePage = new HomePage(driver);
 		
-		loginPage.LoginToApplication("standard_user", "secret_sauce");
-		Assert.assertTrue(homePage.IstHomePageTitleDisplayed(TestConstants.homePageSubTitle), "Home page not displayed.");
+		loginPage.LoginToApplication(ReadJasonUtility.GetValueFromTestData("UserName1"), ReadJasonUtility.GetValueFromTestData("Password"));
+		Assert.assertTrue(homePage.IstHomePageTitleDisplayed(), "Home page not displayed.");
 		
 		
 	}
@@ -34,8 +35,8 @@ public class LoginTestCases extends TestCasesBase {
 		LoginPage loginPage = new LoginPage(driver);
 		HomePage homePage = new HomePage(driver);
 		
-		loginPage.LoginToApplication("standard_user123", "secret_sauce");
-		Assert.assertTrue(!homePage.IstHomePageTitleDisplayed(TestConstants.homePageSubTitle), "Home page is displayed.");
+		loginPage.LoginToApplication(ReadJasonUtility.GetValueFromTestData("WrongUserName"), ReadJasonUtility.GetValueFromTestData("Password"));
+		Assert.assertFalse(homePage.IstHomePageTitleDisplayed(), "Home page is displayed.");
 		
 		
 	}
@@ -47,8 +48,8 @@ public class LoginTestCases extends TestCasesBase {
 		LoginPage loginPage = new LoginPage(driver);
 		HomePage homePage = new HomePage(driver);
 		
-		loginPage.LoginToApplication("standard_user", "secret_sauce123");
-		Assert.assertTrue(!homePage.IstHomePageTitleDisplayed(TestConstants.homePageSubTitle), "Home page is displayed.");
+		loginPage.LoginToApplication(ReadJasonUtility.GetValueFromTestData("UserName1"), ReadJasonUtility.GetValueFromTestData("WrongPassword"));
+		Assert.assertFalse(homePage.IstHomePageTitleDisplayed(), "Home page is displayed.");
 		
 		
 	}
@@ -60,8 +61,8 @@ public class LoginTestCases extends TestCasesBase {
 		LoginPage loginPage = new LoginPage(driver);
 		HomePage homePage = new HomePage(driver);
 		
-		loginPage.LoginToApplication("standard_user123", "secret_sauce123");
-		Assert.assertTrue(!homePage.IstHomePageTitleDisplayed(TestConstants.homePageSubTitle), "Home page is displayed.");
+		loginPage.LoginToApplication(ReadJasonUtility.GetValueFromTestData("WrongUserName"), ReadJasonUtility.GetValueFromTestData("WrongPassword"));
+		Assert.assertFalse(homePage.IstHomePageTitleDisplayed(), "Home page is displayed.");
 		
 		
 	}

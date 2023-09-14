@@ -16,7 +16,7 @@ public class ElementLocators {
 
 	public static class HomePage {
 		// Locators for Home Page
-		public static By homePageTitleLoc = By.xpath("//div[@id='header_container']//span[@class='title']");
+		public static By homePageTitleLoc = By.xpath("//div[@id='header_container']//span[@class='title' and text()='Products']");
 		public static By addToCartButton = By.id("add-to-cart-sauce-labs-backpack");
 		public static By removeButon = By.id("remove-sauce-labs-backpack");
 		public static By productSortDropDown = By.xpath("//select[@data-test='product_sort_container']");

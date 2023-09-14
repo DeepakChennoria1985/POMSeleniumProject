@@ -18,7 +18,7 @@ public class ReadJasonUtility {
 			{
 			 obj = parser.parse(new FileReader(PathUtility.GetConfigFilePath()));
 			}
-			else if(fileName.contains("TestData"))
+			else if(fileName.contains("TestCasesData"))
 			{
 				 obj = parser.parse(new FileReader(PathUtility.GetTestDataFilePath()));
 			}
@@ -40,7 +40,7 @@ public class ReadJasonUtility {
 
 	public static String GetValueFromTestData(String key) {
 
-		return GetValueForKeyFromJson(key, "TestData");
+		return GetValueForKeyFromJson(key, "TestCasesData");
 
 	}
 

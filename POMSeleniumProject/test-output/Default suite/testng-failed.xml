@@ -5,9 +5,9 @@
     <classes>
       <class name="Tests.LoginTests.LoginTestCases">
         <methods>
+          <include name="InValidLoginTestWithWrongUserName"/>
           <include name="SetUp"/>
           <include name="TearDown"/>
-          <include name="InValidLoginTestWithWrongPassword"/>
         </methods>
       </class> <!-- Tests.LoginTests.LoginTestCases -->
     </classes>
