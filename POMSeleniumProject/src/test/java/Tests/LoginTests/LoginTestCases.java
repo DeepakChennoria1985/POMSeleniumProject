@@ -66,5 +66,18 @@ public class LoginTestCases extends TestCasesBase {
 		
 		
 	}
+	
+	
+	@Test(groups = { "Regression" })
+	public void LoginTestWithLockedUser() {
+		
+		// Page Objects initialization
+		LoginPage loginPage = new LoginPage(driver);
+		
+		loginPage.LoginToApplication(ReadJasonUtility.GetValueFromTestData("UserName2"), ReadJasonUtility.GetValueFromTestData("WrongPassword"));
+		Assert.assertEquals(loginPage.GetLockedUserErrorMessage(), ReadJasonUtility.GetValueFromTestData("LockedMessage"), "Locked user error not displayed.");
+		
+		
+	}
 
 }

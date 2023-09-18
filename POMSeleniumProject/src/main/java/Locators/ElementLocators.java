@@ -11,6 +11,7 @@ public class ElementLocators {
 		public static By loginInput = By.id("user-name");
 		public static By passwordInput = By.id("password");
 		public static By loginButton = By.id("login-button");
+		public static By lockedMessage = By.id("//h3[@data-test='error']//button");
 
 	}
 
@@ -21,6 +22,7 @@ public class ElementLocators {
 		public static By removeButon = By.id("remove-sauce-labs-backpack");
 		public static By productSortDropDown = By.xpath("//select[@data-test='product_sort_container']");
 		public static By menuButton = By.id("react-burger-menu-btn");
+		
 
 		public static class LeftPanel {
 			

@@ -25,12 +25,12 @@ public class LoginPage {
 	}
 
 	private void EneterUserName(String userName) {
-		textField.SendKeys(ElementLocators.LoginPage.loginInput, userName);
+		textField.ClearAndSendKeys(ElementLocators.LoginPage.loginInput, userName);
 
 	}
 
 	private void EneterPassword(String password) {
-		textField.SendKeys(ElementLocators.LoginPage.passwordInput, password);
+		textField.ClearAndSendKeys(ElementLocators.LoginPage.passwordInput, password);
 		//driver.findElement(ElementLocators.LoginPage.passwordInput).sendKeys(password);
 
 	}
@@ -45,6 +45,10 @@ public class LoginPage {
 		return webElementActions.GetText(ElementLocators.LoginPage.indexPageTitle);
 	}
 	
+	public String GetLockedUserErrorMessage() {
+		String meg = webElementActions.GetText(ElementLocators.LoginPage.lockedMessage);
+		return webElementActions.GetText(ElementLocators.LoginPage.lockedMessage);
+	}
 	public void LoginToApplication(String userName, String password) {
 		EneterUserName(userName);
 		EneterPassword(password);

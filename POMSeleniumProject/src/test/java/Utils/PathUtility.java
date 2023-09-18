@@ -4,15 +4,15 @@ import java.nio.file.Paths;
 
 public class PathUtility {
 
+	private static String projPath = System.getProperty("user.dir");
+	
 	public static String GetConfigFilePath() {
-		String projpath = System.getProperty("user.dir");
-		return Paths.get(projpath.toString(), "src", "test", "java", "Configs", "GlobalConfig.jason").toString();
+		return Paths.get(projPath, "src", "test", "java", "Configs", "GlobalConfig.jason").toString();
 
 	}
 	
 	public static String GetTestDataFilePath() {
-		String projpath = System.getProperty("user.dir");
-		return Paths.get(projpath.toString(), "src", "test", "java", "TestData", "TestCasesData.jason").toString();
+		return Paths.get(projPath, "src", "test", "java", "TestData", "TestCasesData.jason").toString();
 
 	}
 
